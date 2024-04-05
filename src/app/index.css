@@ -1,0 +1,73 @@
+/* .main-contain{height: 100%;width: 100%;} */
+.main-text{
+    /* float: right; */
+    position: absolute;
+  right: 30%;
+
+  /* width: 300px; */
+  /* border: 3px solid #73AD21; */
+  /* padding: 10px; */
+    z-index: 90;
+
+}
+.container{
+    border: 1px solid rgb(81, 162, 255);
+    box-shadow: 0 0 10px rgb(225, 74, 255);
+}
+.box{
+    background-color: #0c1117;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+.boxi{
+    z-index: -1;
+}
+.left-pane{
+    z-index: 30 !important;
+    /* background-color: #18191f; */
+    height: 100%;
+    width: 25%;
+    position: relative;
+
+}
+.private-key{
+    z-index: 40 !important;
+    background-color: #0b1521;
+    width: 80%;
+    height: auto;
+    margin: 5em auto;
+    border-radius: 1rem;
+}
+.p-text{
+    color:#ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1em;
+}
+.key{
+    background-color: #323232;
+    width: 80%;
+    /* margin: 0 auto; */
+    padding: 0.5em;
+    border-radius: 1em;
+}
+.private-key a{
+    z-index:60  !important;
+}
+.weapon{
+    background-color: #0b1521;
+}
+.right-pane{
+    position: relative;
+    float: right;
+    z-index: 60;
+    height: 100%;
+    width: 25%;
+    /* background-color: aqua; */
+}
+.nav-bar{
+    background-color: #000000 ;
+}
