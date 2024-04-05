@@ -5,8 +5,11 @@
 		<title>Millennium Falcon</title>
 
 		<link rel="stylesheet" href="/index.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script type="importmap">
       {
         "imports": {
@@ -17,13 +20,93 @@
     </script>
 	</head>
 	<body>
+    <div class="topnav">
+      <a class="li" href="#home">Home</a>
+      <a class="li" href="#menu">Inspect</a>
+      <a class="li" href="#reservation">Log out</a>
+      <a class="li" href="#location">Contacts</a>
+  </div>
     <div id="heading">
-      <h1>THE MILLENNIUM FALCON</h1>
-      <div class="border"></div>
+      <span class="main-heading fade-in-text">Silver <br>Wing</span>
+      <!-- <div class="border"></div> -->
+
+      <p class="para-heading">The Silver Wing aircraft is a versatile and agile unmanned aerial vehicle (UAV) designed for surveillance and reconnaissance missions. With its sleek design and advanced technology, it offers long-endurance flights, high-resolution imaging capabilities, and real-time data transmission. Its compact size and maneuverability make it ideal for both military and civilian applications.<br><br><b>Quantity:</b> 28</p>      
+      <button class="button">Compare</button>
+      <form>
+        <input id="backward" type="button" value="<">
+        <input id="forward" type="button" value=">">
+      </form>
     </div>
-    <div id="progress-container">
-      <div id="progress">LOADING 0/100</div>
+
+
+    <div id="heading">
+      <span class="main-heading2 fade-in-text">Sky <br>Fighter<br>Militiary Jet</span>
+      <!-- <div class="border"></div> -->
+      <p class="para-heading2" id="demo"></p>
+       <button class="button1">Compare</button>
     </div>
-		<script type="module" src="main.js"></script>
-	</body>
+
+    <script>
+      var i = 0;
+      var txt = 'The Sky Fighter is a cutting-edge military jet renowned for its exceptional speed, agility, and advanced weaponry. Designed for aerial combat and reconnaissance missions, it boasts state-of-the-art avionics and stealth capabilities, making it a formidable force in modern warfare. Its sleek aerodynamic design enables unmatched maneuverability, ensuring dominance in the skies. QUANTITY: 58';
+      var speed = 20;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      
+      // Directly call the function
+      typeWriter();
+      </script>
+
+
+    <div id="heading">
+      <span class="main-heading3 fade-in-text">Chernovan <br>Nemesis</span>
+      <!-- <div class="border"></div> -->
+      <p class="para-heading3">Chernovan Nemesis is a mythical figure often depicted as a dark and formidable adversary, embodying the concept of inevitable retribution. Across various cultures, it symbolizes the consequences of one's actions and serves as a cautionary tale about the balance of justice and the consequences of wrongdoing.<br><br><b>QUANTITY:</b> 25</p>
+       <button class="button2">Compare</button>
+    </div>
+
+ 
+
+
+    <div id="heading">
+      <span class="main-heading4 fade-in-text">Tank <br>Tiger 2</span>
+      <!-- <div class="border"></div> -->
+      <p class="para-heading4">The Tiger II, commonly known as the King Tiger or Tiger II, was a formidable German heavy tank deployed during World War II. It boasted thick armor and a powerful 88mm gun, making it a feared adversary on the battlefield. However, its production was limited, and mechanical reliability issues hampered its effectiveness. <br><br><b>QUANTITY:</b> 42</p>
+      <button class="button3">Compare</button>
+    </div>
+ 
+
+    <div id="heading">
+      <span class="main-heading5 fade-in-text">BUK Missile<br> System</span>
+      <!-- <div class="border"></div> -->
+      <p class="para-heading5">The BUK Missile System is a Russian-made<br> surface-to-air missile system designed<br> for medium-range air defense. It <br>is capable of engaging various aerial <br>threats, including aircraft, helicopters, <br>and cruise missiles. The system features<br> advanced radar guidance and missile technology, <br>providing effective defense capabilities for<br> military forces against airborne threats. <br><br><b>QUANTITY:</b> 34</p>
+       <button class="button4">Compare</button>
+    </div>
+</body>
 </html>
+
+    <div id="progress-container">
+      <div id="progress">
+        <input id="backward" type="button" value="back">
+        <input id="forward" type="button" value="for">
+      </div>
+
+
+      
+</div>
+
+
+<script type="module" src="main.js"></script>
+<script type="module" src="main1.js"></script>
+<script type="module" src="main2.js"></script>
+<script type="module" src="main3.js"></script>
+<script type="module" src="main4.js"></script>
+
+	</body>
+</html> 

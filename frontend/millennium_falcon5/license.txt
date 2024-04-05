@@ -1,0 +1,11 @@
+Model Information:
+* title:	Missile (Low-Poly)
+* source:	https://sketchfab.com/3d-models/missile-low-poly-1c5534e678c44f639311c9344bcd3f8d
+* author:	Lwifff (https://sketchfab.com/Lwifff)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Missile (Low-Poly)" (https://sketchfab.com/3d-models/missile-low-poly-1c5534e678c44f639311c9344bcd3f8d) by Lwifff (https://sketchfab.com/Lwifff) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

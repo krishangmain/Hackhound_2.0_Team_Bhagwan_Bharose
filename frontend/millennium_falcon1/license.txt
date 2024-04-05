@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sky fighter military jet
+* source:	https://sketchfab.com/3d-models/sky-fighter-military-jet-4c712705931549aa8befb57a4999a014
+* author:	koleos3d (https://sketchfab.com/koleos3d)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sky fighter military jet" (https://sketchfab.com/3d-models/sky-fighter-military-jet-4c712705931549aa8befb57a4999a014) by koleos3d (https://sketchfab.com/koleos3d) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

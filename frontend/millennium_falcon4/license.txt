@@ -1,0 +1,11 @@
+Model Information:
+* title:	BUK Missile System
+* source:	https://sketchfab.com/3d-models/buk-missile-system-7663f9fca2ce485da8c0fafcf2d40d10
+* author:	azlan (https://sketchfab.com/azlan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "BUK Missile System" (https://sketchfab.com/3d-models/buk-missile-system-7663f9fca2ce485da8c0fafcf2d40d10) by azlan (https://sketchfab.com/azlan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

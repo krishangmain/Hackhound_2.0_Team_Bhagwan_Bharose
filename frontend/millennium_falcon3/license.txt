@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tank Tiger 2
+* source:	https://sketchfab.com/3d-models/tank-tiger-2-f23650309a294143a7811737ca314219
+* author:	maximus0075550 (https://sketchfab.com/maximus0075550)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tank Tiger 2" (https://sketchfab.com/3d-models/tank-tiger-2-f23650309a294143a7811737ca314219) by maximus0075550 (https://sketchfab.com/maximus0075550) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
