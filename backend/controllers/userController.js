@@ -54,6 +54,7 @@ const registerController = async (req, res) => {
 			educationalQualifications,
 			message,
 			password: hashedPassword,
+			contacts:[]
 		});
 
 		await newUser.save();
@@ -68,9 +69,9 @@ const registerController = async (req, res) => {
 
 const loginController = async (req, res) => {
 	try {
-		const { aadhaarNumber, password } = req.body;
+		const { aadhaar, password } = req.body;
 
-		const user = await User.findOne({ aadhaarNumber });
+		const user = await User.findOne({ aadhaarNumber:aadhaar });
 		if (!user) {
 			return res.status(404).json({ message: "User not found" });
 		}
@@ -80,19 +81,9 @@ const loginController = async (req, res) => {
 			return res.status(401).json({ message: "Invalid password" });
 		}
 
-		const userData = {
-			firstName: user.firstName,
-			lastName: user.lastName,
-			authorityLevel: user.authorityLevel,
-			publicKey: user.publicKey,
-			privateKey: user.privateKey,
-			armyName: user.armyName,
-			gender: user.gender,
-			phoneNumber: user.phoneNumber,
-			nationality: user.nationality,
-		};
+		
 
-		res.status(200).json({ message: "Login successful", user: userData });
+		res.status(200).json({ message: "Login successful", user: user });
 	} catch (error) {
 		console.error("Error logging in user:", error);
 		res.status(500).json({ message: "Failed to login user" });
@@ -113,6 +104,8 @@ const getUserById = async (req,res) => {
 		res.status(500).json({ message: "Failed to find user" });
     }
 }
+
+
 
 
 module.exports = {registerController ,loginController, getUserById};
