@@ -1,0 +1,11 @@
+Model Information:
+* title:	Silver WIng
+* source:	https://sketchfab.com/3d-models/silver-wing-f171cbff472e4e73acfeca86409d69b6
+* author:	VertaScan (https://sketchfab.com/VertaScan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Silver WIng" (https://sketchfab.com/3d-models/silver-wing-f171cbff472e4e73acfeca86409d69b6) by VertaScan (https://sketchfab.com/VertaScan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
