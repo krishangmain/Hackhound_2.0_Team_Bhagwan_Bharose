@@ -32,27 +32,58 @@ const io = new Server(httpServer, {
 });
 
 io.on("connection", (socket) => {
-	console.log("user connected", socket.id);
+    console.log("user connected", socket.id);
 
-	socket.on("join_room", (room) => {
-		socket.join(room);
-		console.log(`User ${socket.id} joined ${room}`);
-	});
+    socket.on("join_room", (room) => {
+        try {
+            socket.join(room);
+            console.log(`User ${socket.id} joined ${room}`);
+        } catch (error) {
+            console.error("Error joining room:", error);
+        }
+    });
 
-	socket.on("send_message", (data) => {
-		socket.to(data.room).emit("receive_message", data);
-	});
+    socket.on("send_message", (data) => {
+        try {
+            console.log(data);
+            io.to(data.room).emit("receive_message", data);
+        } catch (error) {
+            console.error("Error sending message:", error);
+        }
+    });
 
-	socket.on("disconnect", () => {
-		console.log("user disconnected", socket.id);
-	});
+    socket.on("disconnect", () => {
+        console.log("user disconnected", socket.id);
+    });
 });
 
+contactsId = ["66106b11c1d08c27244d08c6","66106b11c1d08c27244d08ca","66106b11c1d08c27244d08c8"]
+const addContacts = async (userId, contactIds) => {
+	try {
+	  // Find the user by ID
+	  const user = await User.findById(userId);
+	  if (!user) {
+		throw new Error('User not found');
+	  }
+  
+	  // Add the contact IDs to the user's contacts array
+	  user.contacts.push(...contactIds);
+  
+	  // Save the updated user document
+	  await user.save();
+  
+	  return user;
+	} catch (error) {
+	  console.error('Error adding contacts:', error);
+	  throw error;
+	}
+  };
 
 
 mongoose.connect(process.env.MONGO_URI, {}).then(
 	app.listen(process.env.PORT, () => {
 		console.log(`Server is running on port ${process.env.PORT}`);
+		
 	})
 	
-).then(httpServer.listen(process.env.SOCKET_PORT));
+).then(httpServer.listen(process.env.SOCKET_PORT))
