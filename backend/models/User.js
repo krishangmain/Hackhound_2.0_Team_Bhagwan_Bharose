@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
   },
   authorityLevel: {
     type: String,
-    enum: ['Admin', 'Moderator', 'User'],
+    enum: ["Colonel","Major","Captain","Lieutenant","Sergeant"],
     default: 'User',
   },
   aadhaarNumber: {
